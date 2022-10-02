@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ashera</groupId>
+  <artifactId>AndroidGlidePlugin</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  	<!-- swt start 
+  	<parent>
+		<groupId>com.ashera</groupId>
+		<artifactId>swt</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	end swt -->
+  <properties>
+  	<maven.compiler.target>1.8</maven.compiler.target> 
+  	<maven.compiler.source>1.8</maven.compiler.source> 
+  </properties>
+  <!-- android start --> 	
+  	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<!-- end android -->
+  <dependencies>	
+  		<!-- ios start 	
+		<dependency>
+			<groupId>com.ashera</groupId>
+			<artifactId>widgetlibrary</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.j2objc</groupId>
+			<artifactId>j2objc-annotations</artifactId>
+			<version>1.3</version>			
+		</dependency>
+		<dependency>
+			<groupId>com.ashera</groupId>
+			<artifactId>ios_widget_library</artifactId>
+			<version>0.0.1-SNAPSHOT</version>			
+		</dependency>
+		end ios -->
+		
+		<!-- start xml -->
+  		<!-- android start --> 	
+  		<dependency>
+			<groupId>com.ashera</groupId>
+			<artifactId>widgetlibrary</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.j2objc</groupId>
+			<artifactId>j2objc-annotations</artifactId>
+			<version>1.3</version>			
+		</dependency>
+		<!-- end android -->
+		<!-- xml end -->
+		<!-- start xml -->
+		<!-- swt start 
+		<dependency>
+			<groupId>com.ashera</groupId>
+			<artifactId>SWTCommon</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  		<dependency>
+			<artifactId>SWTCorePlugin</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.ashera</groupId>
+		</dependency>
+		<dependency>
+			<artifactId>SWTLayouts</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.ashera</groupId>
+		</dependency>
+		end swt -->
+		<!-- web start 
+		<dependency>
+			<groupId>com.ashera</groupId>
+			<artifactId>SWTCommon</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  		<dependency>
+			<artifactId>SWTCorePlugin</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.ashera</groupId>
+		</dependency>
+		<dependency>
+			<artifactId>SWTLayouts</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.ashera</groupId>
+		</dependency>
+		<dependency>
+			<groupId>org.teavm</groupId>
+			<artifactId>teavm-jso-apis</artifactId>
+			<version>${teavm.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		end web -->
+		<!-- xml end -->
+	</dependencies>
+</project>

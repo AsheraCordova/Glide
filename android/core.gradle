@@ -1,0 +1,9 @@
+repositories {
+    mavenLocal();
+    google();
+    jcenter();
+}
+
+dependencies {
+	implementation group: 'com.github.bumptech.glide', name: 'glide', version: '4.13.2'
+}
